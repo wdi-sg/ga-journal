@@ -22,5 +22,3 @@ The end results should look like these (or as close as possible): [gallery](http
 - The latest post should be displayed on the top.
 - The second post should be displayed in the middle.
 - the first post should be displayed at the bottom.
-
-*HINT: Most CSS are done with the help of extensive googling.*
