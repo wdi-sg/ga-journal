@@ -4,7 +4,7 @@ You have decided to pen down your amazing journey with GA, from the start to gra
 
 *Don't worry, you're going to fix this.*
 
-The contents for the diary are provided for you in `index.html`. Your goal is to fix the CSS in `styles.css` with **flexbox** and **media queries** to make the page nice and responsive.
+The contents for the diary are provided for you in `index.html`. Your goal is to fix the CSS in `styles.css` with **media queries** to make the page nice and responsive.
 
 The end results should look like these (or as close as possible): [gallery](https://github.com/wdi-sg/ga-journal/tree/master/gallery)
 
