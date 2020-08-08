@@ -1,5 +1,145 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+	background-color: rgb(255,221,204);
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	font-family: 'Catamaran', sans-serif;
 }
+
+h1 {
+	color: black;
+	text-align: center;
+	font-family: "Pacifico", cursive;
+}
+
+/*.main-container{
+	width: 100%;
+}*/
+
+
+div > div {
+	margin: 4%;
+	padding: 8%;
+	background: rgb(66,28,82);
+	box-shadow: 2px 2px 5px 1px rgb(0,0,0,0.4);
+	border-radius: 1%;
+}
+
+
+div p{
+	text-align: justify;
+}
+
+div h2, div h3{
+	text-align: center;
+	margin: 2%;
+	font-family: "Indie Flower", cursive;
+}
+
+
+div:first-child {
+	background: #a94064;
+}
+
+
+@media (min-width: 667px) and (max-width: 1023px) {
+		div > div {
+			padding: 4%;
+			margin: 1% 2%;
+		}
+
+		.post-container:nth-child(n+2){
+			width: 38.53%;
+			float: left;
+			position: relative;
+			margin-right: 0;
+			height: 500px;
+		}
+			.main-container:after{
+				content: "";
+  			clear: both;
+  			display: table;
+	}
+}
+
+@media (min-width: 1024px){
+	div > div {
+		margin: 0;
+		padding: 2%;
+	}
+	.main-container {
+		position: relative;
+	}
+	div {
+		display:inline-block;
+		margin: 0;
+	}
+	div:first-child{
+		width: 39%;
+		position: relative;
+	}
+	.post-container:nth-child(n+2){
+		width: 21.48%;
+		margin-top: 5%;
+		}
+	.post-container:nth-child(2) {
+		float:right;
+		margin-right: 3%;
+		}
+		.post-container:nth-child(3) {
+		float:left;
+		margin-left: 3%;
+	}
+}
+
+
+/*
+@media (min-width: 1024px) {
+	div{
+		margin: 0;
+		display: inline-block;
+	}
+	div:first-child{
+		width: 30%;
+		display: inline-block;
+		position: relative;
+	}
+	.post-container:nth-child(n+2){
+		width: 15%;
+	}
+}
+/*
+@media (min-width: 1024px) {
+	}
+	div > div {
+		padding: 2%;
+	}
+	div:first-child {
+		width: 44%;
+		position: relative;
+		display: inline-block;
+		margin: 0;
+	}
+	.post-container:nth-child(n+2) {
+		width: 20%;
+		height: 350px;
+		position: relative;
+		margin-top:3%;
+}
+	.post-container:nth-child(2) {
+		float:right;
+		margin-left:0;
+		margin-right: 2%;
+}
+
+	.post-container:nth-child(3) {
+		float:left;
+		margin-left: 2%;
+}
+
+.main-container:after{
+				content: "";
+  			clear: both;
+  			display: table;
+	}
