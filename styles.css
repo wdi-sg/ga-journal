@@ -1,5 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Pacifico&family=Sriracha&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Pacifico', cursive;
+}
+body {
+  background-color: #F7E5DF;
+}
+
+.post-container {
+  width:92%;
+  margin:4% auto;
+  border-radius:1%;
+  padding:6%;
+  font-size:1.5rem;
+  text-align: center;
+  box-shadow: 10px 10px 5px grey;
+}
+
+#day30 {
+  background-color: #BF6C84;
+  color: #F7E5DF;
+}
+
+#day1, 
+#day15 {
+  color:#F7E5DF;
+  background-color:#6C5B7B ;
+}
+
+h2,h3 {
+  font-family: 'Sriracha', cursive;
+}
+
+p{
+  font-family: 'Mulish', sans-serif;
+}
+
+p,h2, h3{
+  padding:10px 0;
+
+}
+
+@media screen and (min-width: 667px) {
+
+  #day15 {
+    float:right;
+    width: 45%;
+    margin: 1% 4% 4% 1%
+  }
+  #day1 {
+    width: 45%;
+    margin: 1% 1% 4% 4%;
+    float: left;
+  }
+
+  .maincontainer::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@media screen and (min-width: 667px) {
+
+  #day15 {
+    float:right;
+    width: 40%;
+  }
+  #day1 {
+    width: 40%;
+    float: left;
+  }
+
+  .maincontainer::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    width: 100%;
+    margin: 2.5%;
+
+  }
+  #day1 {
+    float:left;
+    width: 25%;
+    margin-right: 0;
+  }
+  #day15{
+    float:right;
+    width: 25%;
+    margin-left: 0;
+  }
+  
+  #day30{
+    display: inline-block;
+    width: 42%;
+    margin-right: 0;
+  }
 }
