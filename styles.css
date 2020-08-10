@@ -1,5 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color:rgb(247,229,223);
 }
+
+body{
+    background-color:rgb(247,229,223);
+}
+
+h1{
+    font-family:"Pacifico", sans-serif ;
+    text-align:center;
+    color:black;
+    padding:30px;
+    font-size:40px;
+    word-spacing: 5px;
+}
+
+.post-container h2,.post-container h3{
+    font-family:"Caveat", sans-serif ;
+    text-align:center;
+}
+
+h2 {
+    font-size:40px;
+    font-weight: normal;
+    padding:10px;
+}
+
+h3 {
+    font-size:30px;
+    font-weight: normal;
+    padding:10px;
+}
+
+p{
+    margin:10px;
+    text-align:left;
+    line-height: 40px;
+    font-size: 25px
+}
+/*.post-container h3{
+    font-family:"Pacifico", sans-serif ;
+    text-align:center;
+}
+*/
+.main-container{
+    text-align:center;
+    position:relative;
+    padding:0px;
+}
+
+.post-container{
+    border-radius: 5px;
+}
+
+.post-container:nth-child(1) {
+        background-color:rgb(108,92,122);
+        position:absolute;
+        top:143%;
+        width:95%;
+        left:2.5%;
+        margin:0px 0px 20px 0px;
+}
+
+.post-container:nth-child(3) {
+        background-color:rgb(108,92,122);
+        position:absolute;
+        width:95%;
+        left:2.5%;
+}
+
+.post-container:nth-child(2) {
+        background-color:rgb(190,109,132);
+        position:relative;
+        width:95%;
+        vertical-align:center;
+        bottom:5px;
+        left:2.5%;
+}
+
+@media only screen and (min-width: 668px) and (max-width: 1024px){
+        h1{
+        font-family:"Pacifico", sans-serif ;
+        text-align:center;
+        color:black;
+        padding:30px;
+        font-size:60px;
+        word-spacing: 5px;
+        }
+
+        .post-container:nth-child(1) {
+        background-color:rgb(108,92,122);
+        border-radius:5px;
+        padding:40px;
+        margin:10px 10px;
+        width:47%;
+        vertical-align: center;
+        position:absolute;
+        top:100%;
+        left:2%;
+        right:90%;
+        height:670px;
+    }
+
+    .post-container:nth-child(3) {
+        background-color:rgb(108,92,122);
+        border-radius:5px;
+        padding:40px;
+        margin:10px 10px;
+        width:47%;
+        vertical-align: center;
+        position:absolute;
+        top:100%;
+        left:50%;
+        right:7%;
+        height:670px;
+    }
+
+    .post-container:nth-child(2) {
+        background-color:rgb(190,109,132);
+        padding:40px;
+        margin:0px 4px 0px 2px;
+        width:100%%;
+        position: relative;
+        vertical-align: center;
+    }
+
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+        .post-container:nth-child(1) {
+        display:inline-block;
+        background-color:rgb(108,92,122);
+        border-radius:5px;
+        padding:40px;
+        margin:auto 0px;
+        width:23%;
+        vertical-align: center;
+        position:absolute;
+        top:10%;
+        bottom:10%;
+        left:11%;
+        right:90%;
+        }
+
+        .post-container:nth-child(3) {
+        display:inline-block;
+        background-color:rgb(108,92,122);
+        border-radius:5px;
+        padding:40px;
+        margin:auto 0px;
+        width:23%;
+        vertical-align: center;
+        position:absolute;
+        top:10%;
+        bottom:10%;
+        left:71%;
+        right:10%;
+        }
+
+        .post-container:nth-child(2) {
+        display:inline-block;
+        background-color:rgb(190,109,132);
+        padding:40px;
+        margin:auto -5px;
+        height:900px;
+        width:37%;
+        position: relative;
+        vertical-align: center;
+        }
+}
+
+
