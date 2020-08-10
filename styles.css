@@ -1,5 +1,102 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@300&family=Shadows+Into+Light&display=swap');
+
+body {
+  background-color: rgb(255, 242, 226);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.main-container div {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+  text-align: center;
+}
+
+h2, h3 {
+  font-size: 20px;
+  font-family: 'Shadows Into Light', cursive;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 15px;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+} 
+
+p {
+  font-family: 'Raleway', sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  padding: 5px 20px 20px 20px;
+}
+
+.post-container-1 {
+  background-color: rgb(105, 62, 136);
+  order: 3;
+}
+
+.post-container-2 {
+  background-color: rgba(182, 96, 109, 0.945);
+  order: 1;
+}
+
+.post-container-3 {
+  background-color: rgb(105, 62, 136);
+  order: 2;
+}
+
+@media (min-width: 667px and max-width: 1023px) {
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .post-container-1 {
+    order: 2;
+    flex-basis: 49.5%;
+  }
+  
+  .post-container-2 {
+    order: 1;
+  }
+  
+  .post-container-3 {
+    order: 3;
+    flex-basis: 49.5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .post-container-1 {
+    order: 1; 
+    height: 450px;
+  }
+  
+  .post-container-2 {
+    order: 2;
+    height: 550px;
+  }
+  
+  .post-container-3 {
+    order: 3;
+    height: 450px;
+  }
 }
