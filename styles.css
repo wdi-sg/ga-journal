@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@300&family=Shadows+Into+Light&display=swap');
 
-body {
-  background-color: rgb(255, 242, 226);
-}
-
 .main-container {
-  display: flex;
-  flex-direction: column;
   color: white;
   text-align: center;
+}
+
+.post-container-1 {
+  background-color: rgb(105, 62, 136);
+}
+
+.post-container-2 {
+  background-color: rgba(182, 96, 109, 0.945);
+}
+
+.post-container-3 {
+  background-color: rgb(105, 62, 136);
+}
+
+body {
+  background-color: rgb(255, 242, 226);
 }
 
 .main-container div {
@@ -40,22 +50,27 @@ p {
   padding: 5px 20px 20px 20px;
 }
 
-.post-container-1 {
-  background-color: rgb(105, 62, 136);
-  order: 3;
+@media (max-width: 666px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .post-container-1 {
+    order: 3;
+  }
+  
+  .post-container-2 {
+    order: 1;
+  }
+  
+  .post-container-3 {
+    order: 2;
+  }
 }
 
-.post-container-2 {
-  background-color: rgba(182, 96, 109, 0.945);
-  order: 1;
-}
-
-.post-container-3 {
-  background-color: rgb(105, 62, 136);
-  order: 2;
-}
-
-@media (min-width: 667px and max-width: 1023px) {
+@media (max-width: 1023px) and (min-width: 667px) {
   .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +93,7 @@ p {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .main-container {
     display: flex;
     flex-direction: row;
@@ -86,17 +101,18 @@ p {
   }
 
   .post-container-1 {
-    order: 1; 
-    height: 450px;
+    order: 1;
+    height: 350px; 
   }
   
   .post-container-2 {
     order: 2;
-    height: 550px;
+    height: 450px;
   }
   
   .post-container-3 {
     order: 3;
-    height: 450px;
+    height: 350px;
   }
 }
+
